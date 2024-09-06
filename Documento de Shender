@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Meu perfil em HTML </title>
+<script src="https://kit.fontawesome.com/fb301ce697.js" crossorigin="anonymous"></script>
+</head>
+<style> 
+    body { background-color: antiquewhite;
+}
+h1 {font-family: verdana; font-size: 22px; text-align: center; color: black
+}
+{font-family: Arial; font-size: 25px; text-align: center; color: black
+}
+p {font-family: Arial; font-size: 18px; text-align: center; color: black
+}
+
+p {font-family: Arial; font-size: 18px; text-align: center; color: black}
+p {font-family: Arial; font-size: 18px; text-align: center; color: black}
+h2 {font-family: verdana; font-size: 22px; text-align: center; color-mark: pink
+}
+</style>
+<body>
+    <br>
+<h1>Este é meu perfil em HTML.</h1>
+<br>
+<p><b>• Shender Martins Rodrigues •</b></p>
+<img src="https://s4.aconvert.com/convert/p3r68-cdx67/aavzv-erjom.png" width="600" height="600" <br> 
+
+<p style="font-family: Arial; font-size: 18px; text-align: center; color: black"> Estudante na área de técnologia</p2> <br>
+<p3>Trabalho como suporte técnico na MXS Solution.</p3> <br>
+<p4>Troquei 5 anos de carreira de sub-gerência para arriscar algo na minha área de estudo/interesse.</p4> <br><br><br>
+<i class="fa-brands fa-instagram"></i>
+<a href="https://www.instagram.com/Shender__/">♦@Shender_♦</a> <br>
+<i class="fa-brands fa-linkedin"></i>
+<a href="https://www.linkedin.com/in/shender-r-281072117/">♦Perfil Profissional♦</a> <br>
+<i class="fa-brands fa-github"></i>
+<a href="https://github.com/Shender99">♦Git Hub♦</a>
+
+
