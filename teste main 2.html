@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Sobre a Empresa</title>
+    <style>
+        body {
+font-family: Arial, sans-serif;
+background-color: #8ABDD8;
+        }
+
+        main { 
+            padding: 20px;
+            background-color: #8ABDD8;
+        }
+        .sobre-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .sobre-container img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .sobre-container h1 {
+            font-size: 40px;
+            color: #080000;
+        
+        }
+
+        .sobre-container p {
+            font-size: 1.2em;
+            color: #030000;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            max-width: 800px;
+        }
+
+        .valores-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .valor-item {
+            width: 30%;
+            padding: 20px;
+            background-color: #f7f5f5;
+            border-radius: 8px;
+            opacity: 0,5px;
+        }
+
+        .valor-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+        
+        }
+
+        .valor-item p {
+            font-size: 1em;
+            color: #0c0000;
+        }
+        
+    
+    </style>
+</head>
+<body>
+<!--.sobre container é uma class pra aplicar as alterações-->
+<!-- quando colocar a imagem alterar a cor da fonte pra melhor visu-->
+<main>
+    <section class="sobre-container">
+        <img src="imagem-loja-moveis.jpg" alt="Imagem da loja de móveis"> <!--Colocar a logo do site ou uma imagem remente-->
+       <strong> <h1>Bem vindo a ÚMadera</h1></strong>
+        <p>  Começando por e-commerce, somos uma loja nova no mercado de móveis
+        Nosso diferencial é estarmos 100% comprometidos em oferecer peças que agreguem ao lar,
+              que  possam completar e trazer personalidade ao ambiente.</p>
+        <p>  Com materiais de primeira linha, visamos sempre oferecer o melhor para nosso cliente,
+     com produtos duradouros e versáteis.
+            Contamos uma seleção cuidadosa de móveis modernos que atendam os desejos do comprador, 
+            oferendo alta qualidade e um design exclusivo.
+          </p>
+    </section>
+<!-- a tag section é para poder divir o conteúdo em sessões-->
+    <section class="valores-container">
+        <div class="valor-item">
+            <h3>Missão</h3>
+            <p>Ajudar você a ter seu aconchegante ambiente como sempre desejou.</p>
+        </div>
+        <div class="valor-item">
+            <h3>Comprometimento</h3>
+            <p>Priorizar sempre a sua satisfação e um atendimento especializado e personalizado
+                 para entendermos e indicarmos o melhor, seja ao renovar um quarto, cozinha ou sala de estar. </p>
+        </div>
+        <div class="valor-item">
+            <h3>Valores</h3>
+            <p>Confiança, qualidade e seriedade naquilo que .</p>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
