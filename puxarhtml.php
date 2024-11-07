@@ -6,5 +6,11 @@ $_SESSION ['sobrenome']= $_POST ['sobrenome'];
 $_SESSION ['genero']= $_POST ['genero'];
 $_SESSION ['telefone']= $_POST ['telefone'];
 $_SESSION ['observacao']= $_POST ['observacao'];
-header('Location:finalzin.php');
+
+echo $_SESSION['nome'];
+echo $_SESSION['idade'];
+echo $_SESSION['sobrenome'];
+echo $_SESSION['genero'];
+echo $_SESSION['telefone'];
+echo $_SESSION['observacao'];
 ?>
