@@ -1,0 +1,95 @@
+CREATE DATABASE IF NOT EXISTS exemplo_db;
+USE exemplo_db;
+
+-- Criar a tabela usuarios
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Criar a tabela pedidos
+CREATE TABLE pedidos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id INT NOT NULL,
+    descricao VARCHAR(255) NOT NULL,
+    valor DECIMAL(10, 2) NOT NULL,
+    data_pedido TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
+    -- Definir chave estrangeira
+    CONSTRAINT fk_usuario_pedido FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+
+
+-- Inserir massa de dados na tabela usuarios
+INSERT INTO usuarios (nome, email) VALUES
+('João Silva', 'joao1@google.com'),
+('Maria Oliveira', 'maria1@outlook.com'),
+('Carlos Souza', 'carlos1@google.com'),
+('Ana Lima', 'ana1@outlook.com'),
+('Pedro Santos', 'pedro1@google.com'),
+('Fernanda Costa', 'fernanda1@outlook.com'),
+('Lucas Almeida', 'lucas1@google.com'),
+('Juliana Pereira', 'juliana1@outlook.com'),
+('Ricardo Teixeira', 'ricardo1@google.com'),
+('Patrícia Carvalho', 'patricia1@outlook.com'),
+('Bruno Rocha', 'bruno1@google.com'),
+('Amanda Nogueira', 'amanda1@outlook.com'),
+('Gustavo Moreira', 'gustavo1@google.com'),
+('Letícia Fernandes', 'leticia1@outlook.com'),
+('Rafael Ribeiro', 'rafael1@google.com'),
+('Sofia Martins', 'sofia1@outlook.com'),
+('Diego Azevedo', 'diego1@google.com'),
+('Larissa Barbosa', 'larissa1@outlook.com'),
+('Felipe Mendes', 'felipe1@google.com'),
+('Isabela Silva', 'isabela1@outlook.com');
+
+-- Inserir massa de dados na tabela pedidos
+INSERT INTO pedidos (usuario_id, descricao, valor) VALUES
+(1, 'Pedido de notebook', 3500.00),
+(1, 'Pedido de teclado', 250.00),
+(2, 'Pedido de smartphone', 2000.00),
+(3, 'Pedido de monitor', 1200.00),
+(4, 'Pedido de fone de ouvido', 150.00),
+(5, 'Pedido de impressora', 600.00),
+(6, 'Pedido de mochila', 100.00),
+(7, 'Pedido de mouse', 80.00),
+(8, 'Pedido de cadeira gamer', 900.00),
+(9, 'Pedido de webcam', 300.00),
+(10, 'Pedido de roteador', 400.00),
+(11, 'Pedido de tablet', 1200.00),
+(12, 'Pedido de cabo HDMI', 50.00),
+(13, 'Pedido de fonte', 250.00),
+(14, 'Pedido de SSD', 500.00),
+(15, 'Pedido de memória RAM', 400.00),
+(16, 'Pedido de processador', 1500.00),
+(17, 'Pedido de placa-mãe', 800.00),
+(18, 'Pedido de gabinete', 300.00),
+(19, 'Pedido de monitor extra', 1300.00),
+(20, 'Pedido de hub USB', 70.00),
+(1, 'Pedido de suporte para notebook', 150.00),
+(2, 'Pedido de teclado mecânico', 350.00),
+(3, 'Pedido de estabilizador', 200.00),
+(4, 'Pedido de pendrive', 50.00),
+(5, 'Pedido de scanner', 700.00),
+(6, 'Pedido de switch de rede', 400.00),
+(7, 'Pedido de headset', 250.00),
+(8, 'Pedido de projetor', 2000.00),
+(9, 'Pedido de câmera DSLR', 4500.00),
+(10, 'Pedido de lente fotográfica', 3000.00),
+(11, 'Pedido de microfone', 800.00),
+(12, 'Pedido de tripé', 150.00),
+(13, 'Pedido de kit de iluminação', 1200.00),
+(14, 'Pedido de estabilizador de câmera', 1000.00),
+(15, 'Pedido de monitor portátil', 700.00),
+(16, 'Pedido de carregador portátil', 200.00),
+(17, 'Pedido de bateria extra', 150.00),
+(18, 'Pedido de leitor de cartão SD', 100.00),
+(19, 'Pedido de drone', 5000.00),
+(20, 'Pedido de capa para notebook', 120.00),
+(1, 'Pedido de item extra', 100.00),
+(2, 'Pedido de item extra', 120.00),
+(3, 'Pedido de item extra', 150.00);

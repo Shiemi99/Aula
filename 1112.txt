@@ -1,0 +1,42 @@
+use exemplo_db
+
+
+select * from pedidos
+
+select * from usuarios 
+
+select
+USUARIOS.ID         as 'ID do Usuário',
+usuarios.nome       as 'Nome do Usuário',
+USUARIOS.EMAIL      as 'Email do Usuário',
+PEDIDOS.ID          as 'ID do Pedido',
+PEDIDOS.DESCRICAO   as 'Descrição do Pedido',
+PEDIDOS.VALOR       as 'Valor do Pedido',
+PEDIDOS.data_pedido as 'Data do Pedido'
+from
+usuarios 
+left join
+pedidos 
+on
+usuario_id = pedidos.usuario_id 
+order by
+usuarios.id, PEDIDOS.data_pedido;
+
+
+
+
+--CONSULTA PARA PEDIDOS POR USUARIO
+
+select 
+usuarios.nome       as usuario,
+pedidos.descricao   as pedido,
+pedidos.valor       as valor,
+pedidos.data_pedido as data_pedido
+from
+usuarios
+inner join
+pedidos on usuarios.id = pedidos.usuario_id 
+where 
+usuarios.id = 10
+order by
+pedidos.data_pedido;
